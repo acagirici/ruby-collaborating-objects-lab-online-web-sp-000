@@ -13,7 +13,7 @@ class Song
     @@all
   end
   
-  def artist_name(name)
+  def artist_name=(name)
     self.artist.nil? ? nil : self.artist.name
   end
 end
