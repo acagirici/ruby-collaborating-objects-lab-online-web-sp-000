@@ -18,7 +18,6 @@ class Artist
   
   def self.songs
       @@all
-    end
   end
   
   def self.find_or_create_by_name
