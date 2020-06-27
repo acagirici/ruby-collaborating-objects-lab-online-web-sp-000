@@ -16,7 +16,7 @@ class Artist
     song = Song.new(song)
   end
   
-  def songs
+  def self.songs
     Song.all.select do |song| 
       @@all
     end
