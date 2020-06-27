@@ -17,7 +17,6 @@ class Artist
   end
   
   def self.songs
-    Song.all.select do |song| 
       @@all
     end
   end
