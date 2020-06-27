@@ -8,8 +8,11 @@ class Artist
     @@all << self
   end
   
+  def self.all
+    @@all
+  end
   
-  def add_song
+  def add_song(song)
     song.artist = self
   end
   
@@ -19,7 +22,7 @@ class Artist
     end
   end
   
-  def find_or_create_by_name
+  def self.find_or_create_by_name
     
   end
   
