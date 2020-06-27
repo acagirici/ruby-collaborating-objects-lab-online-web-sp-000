@@ -13,9 +13,17 @@ class Song
     @@all
   end
   
-  def 
+  def self.new_by_filename(filename)
+    song = self.new 
+    song.title = filename 
+    song 
+  end
   def artist_name=(name)
-    self.artist.nil? ? nil : self.artist.name
+    if (self.artist.nil?)
+      self.artist = Artist.new(name)
+    else
+      self.artist.name = name
+    end
   end
 end
 
